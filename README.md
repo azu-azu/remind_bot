@@ -111,7 +111,7 @@ OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### How to Run
 ```bash
-python feelline/main.py
+python -m feelline.main
 ```
 > 感情ログを入力すると、英語と日本語で構造化された「気づきログ」が返ってきます。
 

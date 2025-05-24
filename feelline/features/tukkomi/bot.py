@@ -1,5 +1,5 @@
-from config.config import TUKKOMI_MODEL, TUKKOMI_TEMPERATURE, MAX_TUKKOMI_COUNT
-from core.chat_runner import run_chat  # GPT通信共通関数
+from feelline.config.config import TUKKOMI_MODEL, TUKKOMI_TEMPERATURE, MAX_TUKKOMI_COUNT
+from feelline.core.chat_runner import run_chat  # GPT通信共通関数
 from .prompt import get_tukkomi_prompt
 
 def generate_tukkomi(text: str) -> list[str]:

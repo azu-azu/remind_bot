@@ -12,6 +12,7 @@ __pycache__/
 feelline/config/.env
 
 # Logs and outputs
+logs
 feelline/logs/
 *.log
 

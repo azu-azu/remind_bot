@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-from config import SUMMARY_MODEL, SUMMARY_TEMPERATURE
+from config.config import SUMMARY_MODEL, SUMMARY_TEMPERATURE
 from core.chat_runner import run_chat
 
 SESSION_SUMMARY_PROMPT_TEMPLATE = """

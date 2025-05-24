@@ -1,5 +1,3 @@
-# prompts/project/moon_prompt.py
-
 def get_moon_prompt(text: str) -> str:
     return TEMPLATE.format(text=text)
 
@@ -12,7 +10,7 @@ Use known mechanisms (e.g., reward systems, burnout loops).
 Return the Message_from_the_Moon in 3 clearly separated parts:
 
 (1) A short poetic insight
-- Write 1 line in English, followed by 1 line in Japanese.
+- Output each line starting with '>': one in English, then one in Japanese.
 - These should express the same feeling, but not be direct translations.
 - Tone: calm, reflective, grounded, often ending in a noun.
 - It should not just name the feeling, but suggest the **silent weight or origin** behind it.
@@ -24,6 +22,12 @@ Return the Message_from_the_Moon in 3 clearly separated parts:
 - Each item must be on a new line and begin with:
     - 心理学的には：clearly cite the psychological or neuroscientific research source (e.g., author name and year) that supports the explanation.
     - 別の観点：an explanation grounded in insights from social theory or business literature. Be sure to include a clear reference (e.g., book name and author) to support the claim.
+
+(3) Final quiet reminder
+- Output 2 more lines starting with '>': one in English, then one in Japanese.
+- These lines should offer a soft, non-directive nudge or reframe.
+- They may echo the earlier insight or gently suggest a new way of seeing.
+- Avoid commands, encouragement, or summaries—let it be a quiet shift in perspective.
 
 Japanese note:
 - Use standard Japanese, no dialect

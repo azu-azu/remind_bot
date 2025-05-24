@@ -1,11 +1,10 @@
 # gptを使うときはここを呼び出す
-
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
+from feelline.config.config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
 
-load_dotenv()
+load_dotenv(dotenv_path="feelline/config/.env")
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def run_chat(messages, model=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE) -> str:
