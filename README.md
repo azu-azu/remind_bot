@@ -102,11 +102,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-ルートに .env ファイルを作成し、以下のように設定：
+Create a .env file in the root directory:：
 ```bash
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
-> ※ .env は .gitignore に含めて公開しないこと
+> ⚠️ Make sure .env is listed in .gitignore (already configured by default)
 
 
 ### How to Run
