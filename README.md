@@ -1,8 +1,8 @@
 
 # 🌙 remindly
 > Feeling-to-Words Logging Assistant powered by `feelline`
-- An AI bot that helps you verbalize vague emotions and insights.
 - ボヤッとした感情を、明確な言葉に変えてくれるAIボット
+- An AI bot that helps you verbalize vague emotions and insights.
 
 **remindly** is an AI system designed to **record and manage structured emotional logs**,
 generated through the expressive power of its core engine, `feelline`.
@@ -15,13 +15,15 @@ for reflection, tracking, and emotional pattern analysis over time.
 
 ## 🐰 Use Cases
 
-- When you want to clarify your vague emotions and store them for future reflection
-- When you're looking to build a personal emotional log and observe recurring patterns
-- When you want to ground yourself before a 1on1 or difficult conversation
-
+```
 - 日々のボヤッとした気持ちを言語化して内省に使いたいとき
 - 自己理解のログを溜めて、感情パターンを可視化したいとき
 - チームメンバーとの1on1前に、自分の感情を整理したいとき
+```
+
+- When you want to clarify your vague emotions and store them for future reflection
+- When you're looking to build a personal emotional log and observe recurring patterns
+- When you want to ground yourself before a 1on1 or difficult conversation
 
 ---
 
@@ -31,13 +33,13 @@ The system generates structured, Markdown-based emotional logs from natural inpu
 Each log includes layered insights such as:
 
 - 💭 What's really on my mind — The quiet, unspoken truth behind your words
-- ❤️‍🔥 Honest Voice ————————————— Raw, unfiltered emotional reactions
-- 🏷 Tags ————————————————————— Emotion and cognition labels in EN/JA
-- 🎯 Fujiko-style Commentary —— Soft, witty critique of your internal logic
-- 🌕 Message from the Moon ———— Grounded psychological reflection with poetic framing
-- 💎 Point of View ———————————— Quiet, perspective-shifting insight drawn from philosophy or timeless wisdom
-- 🐢 Turtle's Whisper ————————— Gentle Laozi-inspired murmurs
-- 🌌 Quiet Cosmos ————————————— Cosmic-scale metaphors from real astrophysics
+- ❤️‍🔥 Honest Voice — Raw, unfiltered emotional reactions
+- 🏷 Tags — Emotion and cognition labels in EN/JA
+- 🎯 Fujiko-style Commentary — Soft, witty critique of your internal logic
+- 🌕 Message from the Moon — Grounded psychological reflection with poetic framing
+- 💎 Point of View — Quiet, perspective-shifting insight drawn from philosophy or timeless wisdom
+- 🐢 Turtle's Whisper — Gentle Laozi-inspired murmurs
+- 🌌 Quiet Cosmos — Cosmic-scale metaphors from real astrophysics
 
 ---
 
