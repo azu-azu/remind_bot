@@ -1,14 +1,13 @@
-
 # 🌙 remindly
 > Feeling-to-Words Logging Assistant powered by `feelline`
 - ボヤッとした感情を、明確な言葉に変えてくれるAIボット
 - An AI bot that helps you verbalize vague emotions and insights.
 
-**remindly** is an AI system designed to **record and manage structured emotional logs**,
+`remindly` is an AI system designed to **record and manage structured emotional logs**,
 generated through the expressive power of its core engine, `feelline`.
 
 While `feelline` transforms vague or tangled emotions into clear and structured language,
-**remindly** receives those outputs and organizes them into meaningful records—
+`remindly` receives those outputs and organizes them into meaningful records—
 for reflection, tracking, and emotional pattern analysis over time.
 
 ---
