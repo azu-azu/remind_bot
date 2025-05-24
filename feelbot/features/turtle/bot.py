@@ -1,5 +1,5 @@
-from feelline.config.config import TURTLE_MODEL, TURTLE_TEMPERATURE
-from feelline.core.chat_runner import run_chat  # GPT通信共通関数
+from feelbot.config.config import TURTLE_MODEL, TURTLE_TEMPERATURE
+from feelbot.core.chat_runner import run_chat  # GPT通信共通関数
 from .prompt import get_turtle_prompt
 
 def generate_turtle(text: str) -> dict:

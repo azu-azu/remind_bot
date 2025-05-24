@@ -1,5 +1,5 @@
-from feelline.config.config import POV_MODEL, POV_TEMPERATURE
-from feelline.core.chat_runner import run_chat
+from feelbot.config.config import POV_MODEL, POV_TEMPERATURE
+from feelbot.core.chat_runner import run_chat
 from .prompt import get_point_of_view_prompt
 
 # --- GPTの出力を構造的に分解する関数 ---

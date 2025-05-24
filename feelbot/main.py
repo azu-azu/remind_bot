@@ -1,5 +1,5 @@
-from feelline.core.chat_helper import assemble_emotional_truth
-from feelline.core.log_store import save_log
+from feelbot.core.chat_helper import assemble_emotional_truth
+from feelbot.core.log_store import save_log
 from datetime import datetime
 
 if __name__ == "__main__":

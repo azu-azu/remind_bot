@@ -1,5 +1,5 @@
-from feelline.config.config import MOON_MODEL, MOON_TEMPERATURE
-from feelline.core.chat_runner import run_chat
+from feelbot.config.config import MOON_MODEL, MOON_TEMPERATURE
+from feelbot.core.chat_runner import run_chat
 from .prompt import get_moon_prompt
 
 # --- GPTの応答を構造的に分解する関数 ---

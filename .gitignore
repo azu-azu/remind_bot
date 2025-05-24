@@ -9,11 +9,11 @@ __pycache__/
 .vscode/
 
 # Environment variables
-feelline/config/.env
+feelbot/config/.env
 
 # Logs and outputs
 logs
-feelline/logs/
+feelbot/logs/
 *.log
 
 # macOS

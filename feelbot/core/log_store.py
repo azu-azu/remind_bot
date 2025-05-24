@@ -8,7 +8,7 @@ from datetime import datetime
 def save_log(entry: dict):
     # ログファイル名用の日付文字列を生成
     date_str = datetime.now().strftime('%Y-%m-%d')
-    log_dir = "feelline/logs"
+    log_dir = "feelbot/logs"
 
     # logsフォルダがなければ自動で作る：存在しててもエラーにしない
     os.makedirs(log_dir, exist_ok=True)

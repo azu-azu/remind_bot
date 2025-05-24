@@ -1,5 +1,5 @@
-from feelline.config.config import QUIET_COSMOS_MODEL, QUIET_COSMOS_TEMPERATURE
-from feelline.core.chat_runner import run_chat
+from feelbot.config.config import QUIET_COSMOS_MODEL, QUIET_COSMOS_TEMPERATURE
+from feelbot.core.chat_runner import run_chat
 from .prompt import get_quiet_cosmos_prompt
 
 

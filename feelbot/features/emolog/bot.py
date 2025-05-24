@@ -1,6 +1,6 @@
 import json
-from feelline.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE, MAX_HONEST_COUNT
-from feelline.core.chat_runner import run_chat
+from feelbot.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE, MAX_HONEST_COUNT
+from feelbot.core.chat_runner import run_chat
 from .prompt import get_emolog_prompt
 
 def call_openai_json(messages, model, temperature):

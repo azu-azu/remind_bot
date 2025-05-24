@@ -1,11 +1,11 @@
 from datetime import datetime
 
-from feelline.features.emolog.bot import generate_emolog  # 💭
-from feelline.features.message_from_the_moon.bot import generate_moon  # 🌕
-from feelline.features.point_of_view.bot import generate_point_of_view  # 💎
-from feelline.features.tukkomi.bot import generate_tukkomi  # 🎯
-from feelline.features.turtle.bot import generate_turtle  # 🐢
-from feelline.features.quiet_cosmos.bot import generate_quiet_cosmos  # 🌌
+from feelbot.features.emolog.bot import generate_emolog  # 💭
+from feelbot.features.message_from_the_moon.bot import generate_moon  # 🌕
+from feelbot.features.point_of_view.bot import generate_point_of_view  # 💎
+from feelbot.features.tukkomi.bot import generate_tukkomi  # 🎯
+from feelbot.features.turtle.bot import generate_turtle  # 🐢
+from feelbot.features.quiet_cosmos.bot import generate_quiet_cosmos  # 🌌
 
 # 感情を抽出するメイン関数
 def assemble_emotional_truth(text: str) -> dict:
