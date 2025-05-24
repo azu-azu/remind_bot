@@ -1,11 +1,24 @@
-# remind_bot 🐇
-> Feeling-to-Words Assistant
-- ボヤッとした感情を、明確な言葉に変えてくれるAIボット
+
+# 🌙 remindly
+> Feeling-to-Words Logging Assistant powered by `feelline`
 - An AI bot that helps you verbalize vague emotions and insights.
+- ボヤッとした感情を、明確な言葉に変えてくれるAIボット
+
+**remindly** is an AI system designed to **record and manage structured emotional logs**,
+generated through the expressive power of its core engine, `feelline`.
+
+While `feelline` transforms vague or tangled emotions into clear and structured language,
+**remindly** receives those outputs and organizes them into meaningful records—
+for reflection, tracking, and emotional pattern analysis over time.
 
 ---
 
 ## 🐰 Use Cases
+
+- When you want to clarify your vague emotions and store them for future reflection
+- When you're looking to build a personal emotional log and observe recurring patterns
+- When you want to ground yourself before a 1on1 or difficult conversation
+
 - 日々のボヤッとした気持ちを言語化して内省に使いたいとき
 - 自己理解のログを溜めて、感情パターンを可視化したいとき
 - チームメンバーとの1on1前に、自分の感情を整理したいとき
@@ -14,16 +27,17 @@
 
 ## 🌠 Overview
 
-**remind_bot** は、感情ログを入力すると、GPTがその構造・原因・内面パターンを分析し、次のような情報を出力します：
+The system generates structured, Markdown-based emotional logs from natural input.
+Each log includes layered insights such as:
 
-- 💭 What's really on my mind｜本当に言いたいこと
-- ❤️‍🔥 Honest Voice｜心の底の本音
-- 🏷 Tags｜感情・認知・内面カテゴリの英日対応
-- 🎯 ツッコミ｜構造へのツッコミ
-- 🌕 Message from the Moon｜根拠をもとにした検証
-- 💎 Point of View｜哲学的な見方
-- 🐢 亀のつぶやき｜空気を読まない亀のひとこと
-- 🌌 Quiet Cosmos｜宇宙物理から見る側面
+- 💭 What's really on my mind — The quiet, unspoken truth behind your words
+- ❤️‍🔥 Honest Voice ————————————— Raw, unfiltered emotional reactions
+- 🏷 Tags ————————————————————— Emotion and cognition labels in EN/JA
+- 🎯 Fujiko-style Commentary —— Soft, witty critique of your internal logic
+- 🌕 Message from the Moon ———— Grounded psychological reflection with poetic framing
+- 💎 Point of View ———————————— Quiet, perspective-shifting insight drawn from philosophy or timeless wisdom
+- 🐢 Turtle's Whisper ————————— Gentle Laozi-inspired murmurs
+- 🌌 Quiet Cosmos ————————————— Cosmic-scale metaphors from real astrophysics
 
 ---
 
@@ -77,38 +91,24 @@
 
 ## 🛠 Setup
 
-### 1. Clone the repository
-
 ```bash
-git clone https://github.com/your-username/remind_bot.git
-cd remind_bot
-```
-
-### 2. Create virtual environment
-
-```bash
+git clone https://github.com/your-username/remindly.git
+cd remindly
 python3 -m venv .venv
 source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-### 4. ".env file"
 ルートに .env ファイルを作成し、以下のように設定：
-
 ```bash
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 > ※ .env は .gitignore に含めて公開しないこと
 
 
-### 5. How to Run
+### How to Run
 ```bash
-python main.py
+python feelline/main.py
 ```
 > 感情ログを入力すると、英語と日本語で構造化された「気づきログ」が返ってきます。
 
@@ -116,57 +116,17 @@ python main.py
 
 ## 📁 Project Structure
 ```plaintext
-remind_bot/
-├── main.py                            # Entry point for CLI-based emotion logging
-├── session_summary_main.py            # Optional entry point for session summaries
-
-├── core/                              # Core orchestration logic
-│   ├── chat_helper.py                 # Assembles and coordinates component outputs
-│   ├── chat_runner.py                 # Handles OpenAI API communication
-│   └── log_store.py                   # Manages timestamped log storage
-
-├── features/                          # Feature-based modular organization
-│   ├── 💭emolog/
-│   │   ├── bot.py                     # Core logic for emotional truth generation
-│   │   ├── prompt.py                  # System prompts for emolog behavior
-│   │   └── __init__.py
-│
-│   ├── 🎯tukkomi/
-│   │   ├── bot.py                     # Fujiko-style commentary logic
-│   │   ├── prompt.py                  # Prompting structure for critical voice
-│   │   └── __init__.py
-│
-│   ├── 🌕message_from_the_moon/
-│   │   ├── bot.py                     # Generates poetic and grounded moon messages
-│   │   ├── prompt.py                  # Prompts for moon-inspired output
-│   │   └── __init__.py
-│
-│   ├── 💎point_of_view/
-│   │   ├── bot.py                     # Generates perspective-shifting insights
-│   │   ├── prompt.py                  # Prompts for philosophical viewpoints
-│   │   └── __init__.py
-│
-│   ├── 🐢turtle/
-│   │   ├── bot.py                     # Quiet turtle-style reflections
-│   │   ├── prompt.py                  # Prompts for turtle responses (optional)
-│   │   └── __init__.py
-│
-│   ├── 🌌quiet_cosmos/
-│   │   ├── bot.py                     # Provides cosmic-scale perspectives
-│   │   ├── prompt.py                  # Astronomical facts and gentle metaphors
-│   │   └── __init__.py
-
-├── summarizer/                        # Log summarization engine
-│   └── log_summarizer.py              # Aggregates and analyzes recent logs
-
-├── config/                            # Global configuration (model, temperature, limits)
-│   └── config.py
-
-├── templates/                         # Output formatting templates (e.g. Markdown)
-├── logs/                              # Auto-saved emotional log history
-├── docs/                              # Documentation and usage guides
-├── setup/                             # Setup and utility scripts
-
+remindly/
+├── feelline/ # Core emotional processing logic
+│ ├── main.py
+│ ├── features/ # Each feature module (emolog, moon, turtle, etc.)
+│ ├── core/ # Orchestration, inference, API handling
+│ ├── summarizer/ # Log aggregation and analysis
+│ ├── templates/ # Markdown output formatting
+│ └── config/ # Global settings and environment management
+├── .gitignore
+├── README.md
+├── requirements.txt
 ```
 
 ---
