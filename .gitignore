@@ -18,6 +18,3 @@ feelbot/logs/
 
 # macOS
 .DS_Store
-
-# develop memo
-feelbot/docs/develop/

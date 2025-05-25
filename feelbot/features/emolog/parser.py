@@ -1,6 +1,4 @@
-from feelbot.config.config import MAX_HONEST_COUNT
-
-def parse_emolog(data: dict) -> dict:
+def parse_emolog(data: dict, max_honest: int) -> dict:
     """
     Extract structured emolog fields from GPT JSON response.
     """
@@ -9,7 +7,7 @@ def parse_emolog(data: dict) -> dict:
             "en": data.get("whats_on_my_mind", {}).get("en", ""),
             "ja": data.get("whats_on_my_mind", {}).get("ja", "")
         },
-        "honest_voice": data.get("honest_voice", [])[:MAX_HONEST_COUNT],
+        "honest_voice": data.get("honest_voice", [])[:max_honest],
         "tags": {
             "en": data.get("tags", {}).get("en", []),
             "ja": data.get("tags", {}).get("ja", [])

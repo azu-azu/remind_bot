@@ -13,7 +13,7 @@ def generate_tukkomi(text: str) -> list[str]:
             temperature=TUKKOMI_TEMPERATURE
         )
 
-        return parse_tukkomi(content)
+        return parse_tukkomi(content, max_count=MAX_TUKKOMI_COUNT)
 
     except Exception as e:
         return [f"ツッコミ生成エラー: {e}"]
