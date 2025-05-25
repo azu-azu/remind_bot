@@ -54,7 +54,9 @@ def render_cli(flat: dict) -> str:
         lines.append("🌕 Message from the Moon:")
         lines.append(f"> {flat['moon_poetic_en']}")
         lines.append(f"> {flat['moon_poetic_ja']}")
+        lines.append("") # ここで空行を追加（grounding前）
         lines.extend([f"- {line}" for line in flat["moon_grounding"]])
+        lines.append("") # ここで空行を追加（grounding後）
         lines.append(f"> {flat['moon_reminder_en']}")
         lines.append(f"> {flat['moon_reminder_ja']}\n")
 

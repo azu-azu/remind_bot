@@ -1,7 +1,8 @@
 import json
-from feelbot.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE, MAX_HONEST_COUNT
+from feelbot.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE
 from feelbot.core.chat_runner import run_chat
 from .prompt import get_emolog_prompt
+from .parser import parse_emolog  # ← ✅ 追加
 
 def call_openai_json(messages, model, temperature):
     try:
@@ -16,7 +17,7 @@ def generate_emolog(text: str) -> dict:
         return [
             {
                 "role": "system",
-                "content": get_emolog_prompt(max_honest=MAX_HONEST_COUNT)
+                "content": get_emolog_prompt()
             },
             {
                 "role": "user",
@@ -30,15 +31,4 @@ def generate_emolog(text: str) -> dict:
         ]
 
     data = call_openai_json(create_prompt(), EMOLOG_MODEL, EMOLOG_TEMPERATURE)
-
-    return {
-        "whats_on_my_mind": {
-            "en": data.get("whats_on_my_mind", {}).get("en", ""),
-            "ja": data.get("whats_on_my_mind", {}).get("ja", "")
-        },
-        "honest_voice": data.get("honest_voice", [])[:MAX_HONEST_COUNT],
-        "tags": {
-            "en": data.get("tags", {}).get("en", []),
-            "ja": data.get("tags", {}).get("ja", [])
-        }
-    }
+    return parse_emolog(data)  # ← ✅ 呼び出しだけに

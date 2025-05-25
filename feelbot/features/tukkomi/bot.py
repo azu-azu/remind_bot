@@ -1,6 +1,7 @@
 from feelbot.config.config import TUKKOMI_MODEL, TUKKOMI_TEMPERATURE, MAX_TUKKOMI_COUNT
-from feelbot.core.chat_runner import run_chat  # GPT通信共通関数
+from feelbot.core.chat_runner import run_chat
 from .prompt import get_tukkomi_prompt
+from .parser import parse_tukkomi
 
 def generate_tukkomi(text: str) -> list[str]:
     prompt = get_tukkomi_prompt(text, MAX_TUKKOMI_COUNT)
@@ -12,12 +13,7 @@ def generate_tukkomi(text: str) -> list[str]:
             temperature=TUKKOMI_TEMPERATURE
         )
 
-        # Markdownの "- " 区切りを抽出
-        return [
-            line.strip()[2:].strip()
-            for line in content.strip().split("\n")
-            if line.strip().startswith("- ")
-        ][:MAX_TUKKOMI_COUNT]
+        return parse_tukkomi(content)
 
     except Exception as e:
         return [f"ツッコミ生成エラー: {e}"]

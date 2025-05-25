@@ -19,9 +19,14 @@ Return the Message_from_the_Moon in 3 clearly separated parts:
 
 (2) Two-layered Grounding (Japanese only)
 - Write both explanation layers in Japanese only.
-- Each item must be on a new line and begin with:
-    - 心理学的には：clearly cite the psychological or neuroscientific research source (e.g., author name and year) that supports the explanation.
-    - 別の観点：an explanation grounded in insights from social theory or business literature. Be sure to include a clear reference (e.g., book name and author) to support the claim.
+- Each line **must begin with one of the following exact labels**:
+    - [moon_grounding_01] 心理学的には：...
+    - [moon_grounding_02] 別の観点：...
+- These labels are required for structural parsing. Do not change them.
+- Always start each explanation with its label **on the same line**, followed by a clear sentence.
+- Use plain, grounded Japanese.
+- Each explanation must include a specific reference (e.g., author name and year for psychology, book title and author for social theory).
+- These labels will not be shown to users. They are for internal processing only.
 
 (3) Final quiet reminder
 - Output 2 more lines starting with '>': one in English, then one in Japanese.
