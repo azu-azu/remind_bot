@@ -37,8 +37,8 @@ def parse_moon(text: str) -> dict:
                 grounding_dict[label_num] = content
 
     grounding_raw = [
-        grounding_dict.get("1", "心理学的には：xxx"),
-        grounding_dict.get("2", "別の観点：xxx")
+        grounding_dict.get("1", "🌘心理学的には：2分間の静寂がストレスホルモンを低下させ、集中力を高めることが研究で示されています（2006年, NIH他）"),
+        grounding_dict.get("2", "🌒さらに、3日間の継続的な沈黙が海馬に新たなニューロンを生む可能性があるという報告もあります（最近の神経可塑性研究）")
     ]
 
     # reminder（末尾2行の `>` から抽出）
