@@ -1,9 +1,10 @@
 # 🌙 Architecture Notes Index
 
-This directory contains **architectural notes**, design decisions, and structural observations related to the project.
+This directory contains **architectural notes**, design decisions,
+and structural observations related to the project.
 
-このディレクトリは、**構造・設計に関する記録（note）**を保存するための場所。
-各ファイルには、機能ごとの構造的判断や、その背景にある意図が記されている。
+- このディレクトリは、構造・設計に関する記録（note）を保存するための場所です
+- 各ファイルには、機能ごとの構造的判断や、その背景にある意図を記しています
 
 ---
 

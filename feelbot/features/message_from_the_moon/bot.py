@@ -22,10 +22,10 @@ def generate_moon(text: str) -> dict:
 
     except Exception as e:
         return {
-            "poetic": {"en": f"[moon error: {e}]", "ja": ""},
+            "poetic": {"en": f"[moon error: {e}]", "ja": "xxx"},
             "grounding": [
-                "心理学的には：自動抽出に失敗しました。",
-                "別の観点：構造の読み取りに失敗しました。"
+                "心理学的には：xxx",
+                "別の観点：xxx"
             ],
             "reminder": {"en": "", "ja": ""}
         }

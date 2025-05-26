@@ -17,8 +17,8 @@ if __name__ == "__main__":
     parsed_emolog = parse_emolog({
         "whats_on_my_mind": {"en": "I'm tired", "ja": "疲れた"},
         "honest_voice": ["もっと早く進めたい", "でも動けない"],
-        "tags": {"en": ["balance"], "ja": ["バランス"]}
-    })
+        "tags": {"en": ["balance"], "ja": ["バランス"]},
+    }, 2)
 
     # --- moon ---
     parsed_moon = parse_moon("""> 静けさは力になる。
@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     # --- tukkomi ---
     parsed_tukkomi = parse_tukkomi("""- もっと落ち着けや
-- はよやらんかい""")
+- はよやらんかい""",2)
 
     # --- turtle ---
     parsed_turtle = parse_turtle("""知者不言、言者不知。
