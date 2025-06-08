@@ -42,10 +42,7 @@ remindly/
 │   │   └── cli_output.py
 │   │
 │   ├── logs/
-│   ├── tests/
-│   │
-│   ├── summarizer/
-│   └── templates/
+│   └── tests/
 │
 ├── architecture
 ├── .gitignore
@@ -71,9 +68,7 @@ remindly/
 │   ├── config/
 │   ├── format/
 │   ├── logs/
-│   ├── tests/
-│   ├── summarizer/
-│   └── templates/
+│   └── tests/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
