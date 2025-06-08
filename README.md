@@ -1,14 +1,14 @@
 # 🌙 remindly
-> Feeling-to-Words Logging Assistant powered by `bots`
+> Feeling-to-Words Logging Assistant powered by `feelbot`
 ```
 - ボヤッとした感情を、明確な言葉に変えてくれるAIボット
 - An AI bot that helps you verbalize vague emotions and insights.
 ```
 
 `remindly` is an AI system designed to **record and manage structured emotional logs**,
-generated through the expressive power of its core engine, `bots`.
+generated through the expressive power of its core engine, `feelbot`.
 
-While `bots` transforms vague or tangled emotions into clear and structured language,
+While `feelbot` transforms vague or tangled emotions into clear and structured language,
 `remindly` receives those outputs and organizes them into meaningful records—
 for reflection, tracking, and emotional pattern analysis over time.
 
@@ -110,7 +110,7 @@ OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### How to Run
 ```bash
-python -m bots.main
+python -m feelbot.main
 ```
 > 感情ログを入力すると、英語と日本語で構造化された「気づきログ」が返ってきます。
 
@@ -119,19 +119,21 @@ python -m bots.main
 ## 📁 Project Structure
 ```plaintext
 remindly/
-├── bots/
+├── feelbot/
 │   ├── main.py
-│   ├── features/
+│   ├── personas/
+│   │   ├── tukkomi/
+│   │   └── turtle/
+│   ├── lenses/
 │   │   ├── emolog/
 │   │   ├── message_from_the_moon/
 │   │   ├── point_of_view/
-│   │   ├── quiet_cosmos/
-│   │   ├── tukkomi/
-│   │   └── turtle/
+│   │   └── quiet_cosmos/
 │   ├── core/
-│   ├── summarizer/
-│   ├── templates/
-│   └── config/
+│   ├── config/
+│   ├── output/
+│   ├── logs/
+│   └── tests/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
