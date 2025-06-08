@@ -9,7 +9,7 @@ __pycache__/
 .vscode/
 
 # Environment variables
-bots/config/.env
+feelbot/config/.env
 
 # Logs and outputs
 logs

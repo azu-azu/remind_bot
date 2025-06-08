@@ -1,6 +1,6 @@
 import json
-from bots.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE, MAX_HONEST_COUNT
-from bots.core.runtime.chat_runner import run_chat
+from feelbot.config.config import EMOLOG_MODEL, EMOLOG_TEMPERATURE, MAX_HONEST_COUNT
+from feelbot.core.runtime.chat_runner import run_chat
 from .prompt import get_emolog_prompt
 from .parser import parse_emolog
 

@@ -1,13 +1,13 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from bots.lenses.emolog.parser import parse_emolog
-from bots.lenses.message_from_the_moon.parser import parse_moon
-from bots.lenses.point_of_view.parser import parse_point_of_view
-from bots.lenses.quiet_cosmos.parser import parse_quiet_cosmos
-from bots.personas.tukkomi.parser import parse_tukkomi
-from bots.personas.turtle.parser import parse_turtle
-from bots.output.text_renderer import flatten_result, render_cli
+from feelbot.lenses.emolog.parser import parse_emolog
+from feelbot.lenses.message_from_the_moon.parser import parse_moon
+from feelbot.lenses.point_of_view.parser import parse_point_of_view
+from feelbot.lenses.quiet_cosmos.parser import parse_quiet_cosmos
+from feelbot.personas.tukkomi.parser import parse_tukkomi
+from feelbot.personas.turtle.parser import parse_turtle
+from feelbot.output.text_renderer import flatten_result, render_cli
 
 
 if __name__ == "__main__":
