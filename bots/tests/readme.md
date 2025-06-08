@@ -3,7 +3,7 @@ This directory contains manual and automated test scripts for validating output 
 
 ## cli_output
 ```bash
-python3 bots/tests/test_cli_output_manual.py
+python3 bots/tests/test_all_parsers.py
 ```
 
 ---
