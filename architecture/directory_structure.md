@@ -3,7 +3,17 @@
 remindly/
 ├── bots/
 │   ├── main.py
-│   ├── features/
+│   ├── personas/
+│   │   ├── tukkomi/
+│   │   │   ├── bot.py
+│   │   │   ├── parser.py
+│   │   │   └── prompt.py
+│   │   └── turtle/
+│   │       ├── bot.py
+│   │       ├── parser.py
+│   │       └── prompt.py
+│   │
+│   ├── lenses/
 │   │   ├── emolog/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
@@ -16,15 +26,7 @@ remindly/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
 │   │   │   └── prompt.py
-│   │   ├── quiet_cosmos/
-│   │   │   ├── bot.py
-│   │   │   ├── parser.py
-│   │   │   └── prompt.py
-│   │   ├── tukkomi/
-│   │   │   ├── bot.py
-│   │   │   ├── parser.py
-│   │   │   └── prompt.py
-│   │   └── turtle/
+│   │   └── quiet_cosmos/
 │   │       ├── bot.py
 │   │       ├── parser.py
 │   │       └── prompt.py
@@ -59,13 +61,14 @@ remindly/
 remindly/
 ├── bots/
 │   ├── main.py
-│   ├── features/
+│   ├── personas/
+│   │   ├── tukkomi/
+│   │   └── turtle/
+│   ├── lenses/
 │   │   ├── emolog/
 │   │   ├── message_from_the_moon/
 │   │   ├── point_of_view/
-│   │   ├── quiet_cosmos/
-│   │   ├── tukkomi/
-│   │   └── turtle/
+│   │   └── quiet_cosmos/
 │   ├── core/
 │   │   ├── runtime/
 │   │   └── storage/
