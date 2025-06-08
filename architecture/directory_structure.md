@@ -37,7 +37,7 @@ remindly/
 │   ├── config/
 │   │   └── config.py
 │   │
-│   ├── format/
+│   ├── output/
 │   │   ├── text_renderer.py
 │   │   └── cli_output.py
 │   │
@@ -66,7 +66,7 @@ remindly/
 │   │   └── turtle/
 │   ├── core/
 │   ├── config/
-│   ├── format/
+│   ├── output/
 │   ├── logs/
 │   └── tests/
 ├── .gitignore

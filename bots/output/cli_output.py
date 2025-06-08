@@ -1,4 +1,6 @@
-from bots.format.text_renderer import flatten_result, render_cli
+# bots/output/cli_output.py
+
+from bots.output.text_renderer import flatten_result, render_cli
 
 def print_result(result: dict) -> None:
     flat = flatten_result(result)

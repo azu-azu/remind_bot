@@ -7,7 +7,7 @@ from bots.features.point_of_view.parser import parse_point_of_view
 from bots.features.tukkomi.parser import parse_tukkomi
 from bots.features.turtle.parser import parse_turtle
 from bots.features.quiet_cosmos.parser import parse_quiet_cosmos
-from bots.format.text_renderer import flatten_result, render_cli
+from bots.output.text_renderer import flatten_result, render_cli
 
 
 if __name__ == "__main__":

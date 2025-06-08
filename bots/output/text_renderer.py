@@ -1,4 +1,4 @@
-# bots/format/text_renderer.py
+# bots/output/text_renderer.py
 
 def flatten_result(result: dict) -> dict:
     """
