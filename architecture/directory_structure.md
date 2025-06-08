@@ -7,37 +7,46 @@ remindly/
 │   │   ├── emolog/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
-│   │   │   ├── prompt.py
-│   │   │   └── __init__.py
+│   │   │   └── prompt.py
 │   │   ├── message_from_the_moon/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
-│   │   │   ├── prompt.py
-│   │   │   └── __init__.py
+│   │   │   └── prompt.py
 │   │   ├── point_of_view/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
-│   │   │   ├── prompt.py
-│   │   │   └── __init__.py
+│   │   │   └── prompt.py
 │   │   ├── quiet_cosmos/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
-│   │   │   ├── prompt.py
-│   │   │   └── __init__.py
+│   │   │   └── prompt.py
 │   │   ├── tukkomi/
 │   │   │   ├── bot.py
 │   │   │   ├── parser.py
-│   │   │   ├── prompt.py
-│   │   │   └── __init__.py
+│   │   │   └── prompt.py
 │   │   └── turtle/
 │   │       ├── bot.py
 │   │       ├── parser.py
-│   │       ├── prompt.py
-│   │       └── __init__.py
+│   │       └── prompt.py
+│   │
 │   ├── core/
+│   │   ├── chat_helper.py
+│   │   ├── chat_runner.py
+│   │   └── log_store.py
+│   │
+│   ├── config/
+│   │   └── config.py
+│   │
+│   ├── format/
+│   │   ├── text_renderer.py
+│   │   └── cli_output.py
+│   │
+│   ├── logs/
+│   ├── tests/
+│   │
 │   ├── summarizer/
-│   ├── templates/
-│   └── config/
+│   └── templates/
+│
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
@@ -58,9 +67,12 @@ remindly/
 │   │   ├── tukkomi/
 │   │   └── turtle/
 │   ├── core/
+│   ├── config/
+│   ├── format/
+│   ├── logs/
+│   ├── tests/
 │   ├── summarizer/
-│   ├── templates/
-│   └── config/
+│   └── templates/
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
