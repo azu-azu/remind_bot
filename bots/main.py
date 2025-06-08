@@ -1,6 +1,6 @@
-from feelbot.core.chat_helper import assemble_emotional_truth
-from feelbot.core.log_store import save_log
-from feelbot.format.cli_output import print_result
+from bots.core.chat_helper import assemble_emotional_truth
+from bots.core.log_store import save_log
+from bots.format.cli_output import print_result
 from datetime import datetime
 
 if __name__ == "__main__":

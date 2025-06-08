@@ -1,4 +1,4 @@
-# feelbot/format/text_renderer.py
+# bots/format/text_renderer.py
 
 def flatten_result(result: dict) -> dict:
     """

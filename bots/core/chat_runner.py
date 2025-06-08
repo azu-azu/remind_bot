@@ -2,9 +2,9 @@
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-from feelbot.config.config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
+from bots.config.config import DEFAULT_MODEL, DEFAULT_TEMPERATURE
 
-load_dotenv(dotenv_path="feelbot/config/.env")
+load_dotenv(dotenv_path="bots/config/.env")
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def run_chat(messages, model=DEFAULT_MODEL, temperature=DEFAULT_TEMPERATURE) -> str:

@@ -1,5 +1,5 @@
-from feelbot.config.config import TURTLE_MODEL, TURTLE_TEMPERATURE
-from feelbot.core.chat_runner import run_chat
+from bots.config.config import TURTLE_MODEL, TURTLE_TEMPERATURE
+from bots.core.chat_runner import run_chat
 from .prompt import get_turtle_prompt
 from .parser import parse_turtle
 

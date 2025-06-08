@@ -3,12 +3,12 @@ This directory contains manual and automated test scripts for validating output 
 
 ## cli_output
 ```bash
-python3 feelbot/tests/test_cli_output_manual.py
+python3 bots/tests/test_cli_output_manual.py
 ```
 
 ## parse_moon_message
 ```bash
-python3 feelbot/tests/test_parse_moon_message.py
+python3 bots/tests/test_parse_moon_message.py
 ```
 
 ---
@@ -45,13 +45,13 @@ python3
 
 ### テストサンプル
 ```
-from feelbot.format.cli_output import print_result
+from bots.format.cli_output import print_result
 print_result({})
 ```
 
 ```
 import importlib
-import feelbot.format.cli_output as cli_output
+import bots.format.cli_output as cli_output
 importlib.reload(cli_output)
 cli_output.print_result({})
 ```

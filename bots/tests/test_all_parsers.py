@@ -1,13 +1,13 @@
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from feelbot.features.emolog.parser import parse_emolog
-from feelbot.features.message_from_the_moon.parser import parse_moon
-from feelbot.features.point_of_view.parser import parse_point_of_view
-from feelbot.features.tukkomi.parser import parse_tukkomi
-from feelbot.features.turtle.parser import parse_turtle
-from feelbot.features.quiet_cosmos.parser import parse_quiet_cosmos
-from feelbot.format.text_renderer import flatten_result, render_cli
+from bots.features.emolog.parser import parse_emolog
+from bots.features.message_from_the_moon.parser import parse_moon
+from bots.features.point_of_view.parser import parse_point_of_view
+from bots.features.tukkomi.parser import parse_tukkomi
+from bots.features.turtle.parser import parse_turtle
+from bots.features.quiet_cosmos.parser import parse_quiet_cosmos
+from bots.format.text_renderer import flatten_result, render_cli
 
 
 if __name__ == "__main__":
@@ -24,7 +24,7 @@ if __name__ == "__main__":
     parsed_moon = parse_moon("""> 静けさは力になる。
 > Silence becomes strength.
 > あなたの存在は充分です。
-> Your presence is already enough.
+> Your presence is enough.
 
 [moon_grounding_01] 心理学的には：静けさは回復の源になります。
 [moon_grounding_02] 別の観点：立ち止まることで道が見えることもあります。
@@ -49,7 +49,7 @@ if __name__ == "__main__":
 The moon has no atmosphere.
 
 Kid-Friendly Version:
-So you can’t hear anything there. It’s always quiet.""")
+So you can't hear anything there. It's always quiet.""")
 
     # --- 統合構造（flatten準拠） ---
     combined = {

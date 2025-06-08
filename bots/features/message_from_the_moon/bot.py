@@ -1,5 +1,5 @@
-from feelbot.config.config import MOON_MODEL, MOON_TEMPERATURE
-from feelbot.core.chat_runner import run_chat
+from bots.config.config import MOON_MODEL, MOON_TEMPERATURE
+from bots.core.chat_runner import run_chat
 from .prompt import get_moon_prompt
 from .parser import parse_moon
 

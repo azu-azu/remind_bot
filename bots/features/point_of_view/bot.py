@@ -1,5 +1,5 @@
-from feelbot.config.config import POV_MODEL, POV_TEMPERATURE
-from feelbot.core.chat_runner import run_chat
+from bots.config.config import POV_MODEL, POV_TEMPERATURE
+from bots.core.chat_runner import run_chat
 from .prompt import get_point_of_view_prompt
 from .parser import parse_point_of_view
 

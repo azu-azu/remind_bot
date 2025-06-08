@@ -1,7 +1,7 @@
 ## 📁 Project Structure（detail）
 ```plaintext
 remindly/
-├── feelbot/
+├── bots/
 │   ├── main.py
 │   ├── features/
 │   │   ├── emolog/
@@ -58,7 +58,7 @@ remindly/
 ## 📁 Project Structure（short ver.）
 ```plaintext
 remindly/
-├── feelbot/
+├── bots/
 │   ├── main.py
 │   ├── features/
 │   │   ├── emolog/
