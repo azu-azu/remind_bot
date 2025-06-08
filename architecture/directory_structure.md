@@ -30,9 +30,11 @@ remindly/
 │   │       └── prompt.py
 │   │
 │   ├── core/
-│   │   ├── chat_helper.py
-│   │   ├── chat_runner.py
-│   │   └── log_store.py
+│   │   ├── runtime/
+│   │   │   ├── chat_helper.py
+│   │   │   └── chat_runner.py
+│   │   └── storage/
+│   │       └── log_store.py
 │   │
 │   ├── config/
 │   │   └── config.py
@@ -65,6 +67,8 @@ remindly/
 │   │   ├── tukkomi/
 │   │   └── turtle/
 │   ├── core/
+│   │   ├── runtime/
+│   │   └── storage/
 │   ├── config/
 │   ├── output/
 │   ├── logs/
