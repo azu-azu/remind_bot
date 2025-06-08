@@ -6,11 +6,6 @@ This directory contains manual and automated test scripts for validating output 
 python3 bots/tests/test_cli_output_manual.py
 ```
 
-## parse_moon_message
-```bash
-python3 bots/tests/test_parse_moon_message.py
-```
-
 ---
 
 ### 📌 Purpose
