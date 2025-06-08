@@ -47,6 +47,7 @@ remindly/
 │   ├── summarizer/
 │   └── templates/
 │
+├── architecture
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
