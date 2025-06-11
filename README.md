@@ -1,4 +1,4 @@
-# 🌙 remindly
+# 🌕🌲 remindly
 
 > A modular reflection system for emotional insight and structured thought
 
@@ -18,9 +18,9 @@ we need both **stillness** and **motion**, **emotion** and **structure** to move
 
 ---
 
-## 🪵 Core Modules
+## 🌳 Core Modules
 
-### 🐰 feelbot/
+### 🚪 feelbot/
 - Expressive transformation of vague emotions into bilingual, structured logs
 - Interfaces: `tukkomi`, `turtle`, `message_from_the_moon`, `quiet_cosmos` etc.
 - Output: Markdown-based emotional logs with tags, commentary, cosmic metaphors

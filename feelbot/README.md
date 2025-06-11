@@ -1,4 +1,4 @@
-# 🪟 feelbot
+# 🚪 feelbot
 
 > Feeling-to-Words Logging Assistant powered by `feelbot`
 ```
